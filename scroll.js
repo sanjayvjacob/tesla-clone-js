@@ -1,35 +1,47 @@
-document.lastScrollPosition = 0;
-document.lastCentered = 0;
-document.onWayTo = null;
+let lastScrollPosition = 0;
+let lastCentered = 0;
+let onWayTo = null;
 
 document.addEventListener("scroll", () => {
-  const direction =
-    window.pageYOffset - document.lastScrollPosition > 0 ? "down" : "up";
+  // Determine the direction of the scroll (up or down)
+  const direction = window.pageYOffset - lastScrollPosition > 0 ? "down" : "up";
 
-  const sections = [...document.querySelectorAll("section")];
+  // Select all section elements on the page
+  const sections = document.querySelectorAll("section");
 
-  if (document.onWayTo === null) {
-    const destIndex =
-      direction === "up"
-        ? document.lastCentered - 1
-        : document.lastCentered + 1;
+  // If the page is not currently scrolling to a specific section
+  if (onWayTo === null) {
+    // Calculate the index of the destination section based on the direction of the scroll
+    const destIndex = direction === "up" ? lastCentered - 1 : lastCentered + 1;
+
+    // Check if the destination index is within the valid range of sections
     if (destIndex >= 0 && destIndex < sections.length) {
-      document.onWayTo = destIndex;
+      // Set onWayTo to the destination index and scroll the window to the offset top of that section
+      onWayTo = destIndex;
       window.scroll(0, sections[destIndex].offsetTop);
     }
   }
 
+  // Iterate over each section
   sections.forEach((section, index) => {
+    // Check if the current section is centered on the screen
     if (window.pageYOffset === section.offsetTop) {
-      document.lastCentered = index;
-      section.className = "active";
-      if (document.onWayTo === index) {
-        document.onWayTo = null;
+      // Update lastCentered with the index of the centered section
+      lastCentered = index;
+
+      // Add the "active" class to the centered section
+      section.classList.add("active");
+
+      // If the section is the one the page is currently scrolling towards, set onWayTo to null
+      if (onWayTo === index) {
+        onWayTo = null;
       }
     } else {
-      section.className = "";
+      // Remove the "active" class from sections that are not centered
+      section.classList.remove("active");
     }
   });
 
-  document.lastScrollPosition = window.pageYOffset;
+  // Update lastScrollPosition with the current scroll position
+  lastScrollPosition = window.pageYOffset;
 });
