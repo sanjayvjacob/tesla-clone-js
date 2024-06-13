@@ -1,9 +1,18 @@
-## Tesla Website Clone
+# Tesla website clone
+
+- This is a cloned website of the official tesla page.
+- Created Using HTML5, CSS3 and JavaScript.
+
+## Live site URL
+
+https://sanjayvjacob.github.io/tesla-clone-js/
 
 ## Screenshot
 
 ![](./screenshot.png)
 
-## Live site URL
+## Features
 
-https://sanjayvjacob.github.io/tesla-clone-js/
+- Scroll through pictures smoothly.
+- Open/Close the menu.
+- Responsive with all devices.
