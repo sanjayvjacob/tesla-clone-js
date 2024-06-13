@@ -10,34 +10,34 @@
 }
 
 .section.one {
-	background-image: url(../assets/model3.avif);
+	background-image: url(../assets/model3.jpg);
 }
 
 .section.two {
-	background-image: url(../assets/modely.avif);
+	background-image: url(../assets/modely.jpg);
 }
 
 .section.three {
-	background-image: url(../assets/modelx.avif);
+	background-image: url(../assets/modelx.jpg);
 }
 
 .section.four {
-	background-image: url(../assets/models.avif);
+	background-image: url(../assets/models.jpg);
 }
 
 .section.five {
-	background-image: url(../assets/cybertruck.avif);
+	background-image: url(../assets/cybertruck.jpg);
 }
 
 .section.six {
-	background-image: url(../assets/solarpanels.avif);
+	background-image: url(../assets/solarpanels.jpg);
 }
 
 .section.seven {
-	background-image: url(../assets/solarroof.avif);
+	background-image: url(../assets/solarroof.jpg);
 }
 .section.eight {
-	background-image: url(../assets/powerwall.avif);
+	background-image: url(../assets/powerwall.jpg);
 }
 
 .section__content {
