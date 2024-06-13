@@ -86,18 +86,18 @@
 	font-size: 1.5rem;
 	font-weight: 500;
 	padding: 1rem;
-	border-radius: 2rem;
+	border-radius: 10px;
 	flex-basis: 80%;
 	margin-bottom: 1rem;
 	text-transform: capitalize;
 }
 
-.action__btn__primary {
+.action__btn__secondary {
 	background: rgba(23, 26, 42, 0.8);
 	color: white;
 }
 
-.action__btn__secondary {
+.action__btn__primary {
 	background: rgba(255, 255, 255, 0.65);
 	color: var(--primary-color);
 }
