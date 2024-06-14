@@ -1,18 +1,22 @@
-# Tesla website clone
+<div align='center'><h1>Tesla Website Clone</h1></div>
 
-- This is a cloned website of the official tesla page.
-- Created Using HTML5, CSS3 and JavaScript.
+<h2>About the project</h2>
 
-## Live site URL
+  <p>This is a clone project of Tesla website homepage using HTML5, CSS3, and JavaScript. The clone will replicate the look and feel of the Tesla website's homepage, including its layout, design elements, and some interactivity.</p>
 
-https://sanjayvjacob.github.io/tesla-clone-js/
+👉 Live Demo: <a href='https://tesla-clone-js.vercel.app/'>Live Demo</a>
 
-## Screenshot
+<h3>Build with:</h3>
 
-![](./screenshot.png)
+» HTML5, CSS3, JavaScript
 
-## Features
+### Screenshot
 
-- Scroll through pictures smoothly.
-- Open/Close the menu.
-- Responsive with all devices.
+![](./assets/screenshots/screenshot1.png)
+![](./assets/screenshots/screenshot2.png)
+![](./assets/screenshots/screenshot3.png)
+![](./assets/screenshots/screenshot4.png)
+![](./assets/screenshots/screenshot5.png)
+![](./assets/screenshots/screenshot6.png)
+![](./assets/screenshots/screenshot7.png)
+![](./assets/screenshots/screenshot8.png)
